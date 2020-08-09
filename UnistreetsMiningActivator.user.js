@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         UnistreetsMiningActivator
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
+// @updateURL    https://openuserjs.org/meta/SomeDude/UnistreetsMiningActivator.meta.js
 // @license      MIT
 // @description  Activates Every Mine Without Reloads
 // @author       SomeDude
@@ -12,7 +13,6 @@
 (function() {
     'use strict';
 
-    // Your code here...
     window.addEventListener("load", mineEverything, false);
 
     function mineEverything()
