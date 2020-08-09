@@ -2,7 +2,7 @@
 // @name         UnistreetsMiningActivator
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @license      GPLV3
+// @license      MIT
 // @description  Activates Every Mine Without Reloads
 // @author       SomeDude
 // @match        https://www.unistreets.com/mining.php
