@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         UnistreetsMiningActivator
 // @description  Activates Every Mine Without Reloads
-// @version      0.3
+// @version      0.4
 // @license      MIT
 // @author       SomeDude
 // @grant        none
@@ -17,10 +17,10 @@
 
     function mineEverything()
     {
-        var cookieMonster = document.cookie;
-        var numItems = $('.evens').length + $('.odds').length;
-
         if (!$("table").hasClass("table-gang")) {
+            var cookieMonster = document.cookie;
+            var numItems = $('.evens').length + $('.odds').length;
+
             for (var i = 1; i <= numItems; i++) {
                 fetch("https://www.unistreets.com/mining.php?action=start&MID=" + i, {
                     "headers": {
@@ -39,8 +39,8 @@
                     "method": "POST",
                     "mode": "cors"
                 });
-            
             }
+            $('.general_btn').remove();
         }
     }
 })();
